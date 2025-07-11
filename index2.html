@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume</title>
+  <link rel="stylesheet" href="index3.css" />
+</head>
+<body>
+
+  <!-- Фоновая анимация -->
+  <div class="background-animation">
+    <canvas id="bgCanvas"></canvas>
+  </div>
+
+  <div class="navbar">
+    <button class="active" data-content="resume">Resume</button>
+    <button data-content="projects">Projects</button>
+    <button data-content="skills">Skills</button>
+    <button data-content="certifications">Certifications</button>
+    <button data-content="contact">Contact</button>
+  </div>
+
+  <div class="content" id="content">
+    <div class="resume-container">
+      <div class="left-column">
+        <!-- Убраны анимации слов и ромб -->
+        <div class="data-network">
+          <div class="dot dot1"></div>
+          <div class="dot dot2"></div>
+          <div class="dot dot3"></div>
+          <div class="dot dot4"></div>
+          <div class="dot dot5"></div>
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+          <div class="line line4"></div>
+        </div>
+      </div>
+      <div class="right-column" id="resume-text">
+       <p>Я начинающий Data Analyst, полный энтузиазма и стремления развиваться в области Data analysis, Big Data и машинного обучения. Несмотря на отсутствие профессионального опыта, я обладаю сильным аналитическим мышлением и искренней любовью к данным и информации. Быстро учусь новым инструментам и технологиям, постоянно совершенствую свои навыки через самообучение, онлайн-курсы и практические проекты.
+
+        Моя главная цель — стать частью команды профессионалов, где я смогу не только применять свои знания, но и учиться у опытных коллег, решая задачи бизнес-масштаба. Я открыт к новым вызовам и готов вкладываться в развитие проектов, которые приносят реальную ценность компании.
+        
+        Основными своими навыками я считаю:
+        
+        Уверенный английский язык на уровне B2–C1 — необходим для чтения технической документации, общения с коллегами и изучения новых инструментов.
+
+— помогает сохранять концентрацию и продуктивность при работе с большими объемами данных и сжатых сроках.
+
+— способность быстро осваивать новые технологии, инструменты и методы анализа данных, что особенно важно в динамичной сфере аналитики.
+      </div>
+    </div>
+  </div>
+
+  <!-- Кнопки стрелок -->
+  <button class="nav-arrow left" aria-label="Previous section">&#8592;</button>
+  <button class="nav-arrow right" aria-label="Next section">&#8594;</button>
+
+  <script src="index3.js"></script>
+
+</body>
+</html>
