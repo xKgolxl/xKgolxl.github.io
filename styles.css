@@ -10,7 +10,6 @@ body, html {
   background-color: #121212; /* тёмный фон */
   color: #ddd;
 }
-
 .navbar {
   display: flex;
   background-color: #222;
