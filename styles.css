@@ -186,7 +186,7 @@ body, html {
   height: 100%;
 }
 
-..skills-container-extended {
+.skills-container-extended {
   display: flex;
   gap: 15px; /* уменьшено расстояние между колонками */
   padding: 10px; /* уменьшены внутренние отступы */
@@ -279,8 +279,8 @@ body, html {
   margin-bottom: 15px;
   color: #a0d468;
   font-weight: 700;
-  -size: 1.3rem;
-}
+  font-size: 1.3rem;
+
 
 .skill-item {
   background: rgba(255 255 255 / 0.1);
