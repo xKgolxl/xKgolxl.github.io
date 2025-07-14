@@ -7,7 +7,7 @@ body, html {
   overflow-x: hidden;
   position: relative;
   z-index: 1;
-  background-color: #121212; /* тёмный фон */
+  background-color: #121212;
   color: #ddd;
 }
 .navbar {
@@ -188,8 +188,8 @@ body, html {
 
 .skills-container-extended {
   display: flex;
-  gap: 15px; /* уменьшено расстояние между колонками */
-  padding: 10px; /* уменьшены внутренние отступы */
+  gap: 15px;
+  padding: 10px;
   color: #ddd;
   height: 100%;
   box-sizing: border-box;
@@ -199,36 +199,36 @@ body, html {
 .skills-column {
   flex: 1;
   background: rgba(255 255 255 / 0.05);
-  border-radius: 6px; /* уменьшен радиус */
-  padding: 10px; /* уменьшен padding */
-  box-shadow: 0 0 10px rgba(74, 222, 128, 0.15); /* менее выраженная тень */
+  border-radius: 6px; 
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(74, 222, 128, 0.15); 
   animation: glowPulse 3s infinite ease-in-out;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 0.85rem; /* уменьшен размер шрифта */
+  font-size: 0.85rem;
 }
 
 .skills-column h3 {
   margin-bottom: 10px;
   color: #a0d468;
   font-weight: 700;
-  font-size: 1.1rem; /* уменьшен размер заголовка */
+  font-size: 1.1rem;
 }
 
 .skill-item {
   background: rgba(255 255 255 / 0.1);
-  border-radius: 6px; /* уменьшен радиус */
-  padding: 6px 8px; /* уменьшен padding */
-  margin: 4px 0; /* уменьшены отступы между элементами */
-  width: 95%; /* чуть уже */
+  border-radius: 6px;
+  padding: 6px 8px; 
+  margin: 4px 0;
+  width: 95%; 
   text-align: center;
   cursor: pointer;
-  box-shadow: 0 0 4px rgba(74, 222, 128, 0.2); /* более мягкая тень */
+  box-shadow: 0 0 4px rgba(74, 222, 128, 0.2); 
   transition: box-shadow 0.3s ease, background-color 0.3s ease;
   user-select: none;
   position: relative;
-  font-size: 0.9rem; /* чуть меньше шрифт */
+  font-size: 0.9rem;
 }
 
 .skill-item:hover {
@@ -242,7 +242,6 @@ body, html {
   font-weight: 700;
 }
 
-/* Анимация свечения вокруг колонок */
 @keyframes glowPulse {
   0%, 100% {
     box-shadow: 0 0 10px rgba(74, 222, 128, 0.15);
@@ -301,14 +300,12 @@ body, html {
   background-color: rgba(74, 222, 128, 0.15);
 }
 
-/* Подсветка связанных навыков */
 .skill-item.highlighted {
   background-color: rgba(74, 222, 128, 0.3);
   box-shadow: 0 0 20px #4ade80;
   font-weight: 700;
 }
 
-/* Анимация свечения вокруг колонок */
 @keyframes glowPulse {
   0%, 100% {
     box-shadow: 0 0 15px rgba(74, 222, 128, 0.2);
@@ -319,10 +316,10 @@ body, html {
 }
 
 .right-column {
-  background: rgba(30, 30, 30, 0.6); /* тёмный полупрозрачный фон */
+  background: rgba(30, 30, 30, 0.6);
   border-radius: 12px;
   padding: 20px 25px;
-  backdrop-filter: blur(8px); /* размытие заднего фона */
+  backdrop-filter: blur(8px);
   box-shadow:
     0 0 10px rgba(74, 222, 128, 0.3),
     0 0 20px rgba(74, 222, 128, 0.15);
@@ -332,7 +329,6 @@ body, html {
   max-width: 600px;
   margin: 0 auto;
 
-  /* Анимация пульсации свечения */
   animation: glowPulseText 4s ease-in-out infinite;
 }
 
