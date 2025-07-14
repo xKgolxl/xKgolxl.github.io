@@ -118,12 +118,14 @@ const contents = {
       </div>
     </div>
   `,
-
-  contact: `
-  <p>You could interact with me through my Email</p>
-  <p>homervan2802@gmail.com</p>
-  <p>OR</p>
-  <button id="telegram-contact-button">Telegram Channel</button>
+  
+contact: `
+  <div class="contact-container">
+    <p>You can interact with me through my Email:</p>
+    <p><a href="mailto:homervan2802@gmail.com" style="color:#a0d468; text-decoration:none;">homervan2802@gmail.com</a></p>
+    <p>OR</p>
+    <button id="telegram-contact-button">Telegram Channel</button>
+  </div>
 `
 };
 
