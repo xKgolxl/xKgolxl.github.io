@@ -124,8 +124,8 @@ const contents = {
   <p>homervan2802@gmail.com</p>
   <p>OR</p>
   <button id="telegram-contact-button">Telegram Channel</button>
-`,
-
+`
+};
 
 let currentTab = 'resume';
 
@@ -205,11 +205,22 @@ function attachSkillHoverHandlers() {
   });
 }
 
+function attachContactHandlers() {
+  const telegramBtn = document.getElementById('telegram-contact-button');
+  if (telegramBtn) {
+    telegramBtn.addEventListener('click', () => {
+      window.open('https://t.me/your_channel_name', '_blank');
+    });
+  }
+}
+
 function setActiveTab(tab) {
   originalSetActiveTab(tab);
 
   if (tab === 'skills') {
     setTimeout(attachSkillHoverHandlers, 50);
+  } else if (tab === 'contact') {
+    setTimeout(attachContactHandlers, 50);
   }
 }
 
@@ -303,25 +314,6 @@ function animate() {
   update();
   draw();
   requestAnimationFrame(animate);
-}
-
-function setActiveTab(tab) {
-  originalSetActiveTab(tab);
-
-  if (tab === 'skills') {
-    setTimeout(attachSkillHoverHandlers, 50);
-  } else if (tab === 'contact') {
-    setTimeout(attachContactHandlers, 50);
-  }
-}
-
-function attachContactHandlers() {
-  const telegramBtn = document.getElementById('telegram-contact-button');
-  if (telegramBtn) {
-    telegramBtn.addEventListener('click', () => {
-      window.open('https://t.me/your_channel_name', '_blank');
-    });
-  }
 }
 
 window.addEventListener('resize', resize);
