@@ -122,7 +122,7 @@ const contents = {
 contact: `
   <div class="contact-container">
     <p>You can interact with me through my Email:</p>
-    <p><a href="mailto:homervan2802@gmail.com" style="color:#a0d468; text-decoration:none;">homervan2802@gmail.com</a></p>
+    <p><a href="mailto:homervan2802@gmail.com">homervan2802@gmail.com</a></p>
     <p>OR</p>
     <button id="telegram-contact-button">Telegram Channel</button>
   </div>
@@ -212,7 +212,7 @@ function attachContactHandlers() {
   const telegramBtn = document.getElementById('telegram-contact-button');
   if (telegramBtn) {
     telegramBtn.addEventListener('click', () => {
-      window.open('https://t.me/your_channel_name', '_blank');
+      window.open('https://t.me/LvL99999999999999999999999999999', '_blank');
     });
   }
 }
