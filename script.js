@@ -3,7 +3,6 @@ const contentDiv = document.getElementById('content');
 const leftArrow = document.querySelector('.nav-arrow.left');
 const rightArrow = document.querySelector('.nav-arrow.right');
 
-// Обновлённый список вкладок
 const tabs = ['resume', 'projects', 'skills', 'certifications', 'contact'];
 
 const contents = {
@@ -22,18 +21,19 @@ const contents = {
           <div class="line line4"></div>
         </div>
       </div>
-      <div class="right-column" id="resume-text">
-        <p>Я начинающий Data Analyst, полный энтузиазма и стремления развиваться в области Big Data и машинного обучения. Несмотря на отсутствие профессионального опыта, я обладаю сильным аналитическим мышлением и искренней любовью к данным и информации.</p>
-        <p>Быстро учусь новым инструментам и технологиям, постоянно совершенствую свои навыки через самообучение, онлайн-курсы и практические проекты.</p>
-        <p>Моя главная цель — стать частью команды профессионалов, где я смогу не только применять свои знания, но и учиться у опытных коллег, решая задачи бизнес-масштаба. Я открыт к новым вызовам и готов вкладываться в развитие проектов, которые приносят реальную ценность компании.</p>
-        <p>Основными своими навыками я считаю:</p>
-        <ul>
-          <li>Уверенный английский язык на уровне B2–C1 — необходим для чтения технической документации, общения с коллегами и изучения новых инструментов.</li>
-          <li>Способность быстро осваивать новые технологии, инструменты и методы анализа данных, что особенно важно в динамичной сфере аналитики.</li>
-        </ul>
-        <p>Но если бы мне нужно было отметить или выбрать самую главную и самую важную черту личности человека, то я считаю, что Stress-high-tolerance — лучшая из всех возможных.</p>
-      </div>
-    </div>
+<div class="right-column" id="resume-text">
+  <p>I am a beginner Data Analyst, full of enthusiasm and eager to develop in the fields of Data Analysis, Big Data, and Machine Learning. Despite lacking professional experience, I possess strong analytical thinking and a genuine passion for data and information. I quickly learn new tools and technologies, constantly improving my skills through self-study, online courses, and practical projects.</p>
+
+  <p>My main goal is to become part of a team of professionals where I can not only apply my knowledge but also learn from experienced colleagues by solving business-scale problems. I am open to new challenges and ready to contribute to the development of projects that bring real value to the company.</p>
+
+  <p>My key skills include:</p>
+
+  <ul>
+    <li>Confident English at the B2–C1 level — necessary for reading technical documentation, communicating with colleagues, and learning new tools.</li>
+    <li>The ability to maintain focus and productivity when working with large volumes of data and tight deadlines.</li>
+    <li>The ability to quickly master new technologies, tools, and data analysis methods, which is especially important in the fast-paced field of analytics.</li>
+  </ul>
+</div>
   `,
   projects: "<p>Here are some cool projects I've worked on.</p>",
 
@@ -123,9 +123,8 @@ const contents = {
   contact: "<p>Contact me at email@example.com</p>"
 };
 
-let currentTab = 'resume'; // для отслеживания текущей вкладки
+let currentTab = 'resume'; 
 
-// Генерация случайного тёмного цвета в HSL
 function getRandomDarkColor() {
   const hue = Math.floor(Math.random() * 360);
   const saturation = 50 + Math.random() * 30;
@@ -133,10 +132,10 @@ function getRandomDarkColor() {
   return { hue, saturation, lightness };
 }
 
-let animHue = 140; // стартовый зелёный оттенок для resume
+let animHue = 140;
 let animSat = 70;
-let brightness = 70; // текущая яркость (lightness)
-let brightnessDir = 1; // направление изменения яркости
+let brightness = 70;
+let brightnessDir = 1;
 
 function updateColors(tab) {
   currentTab = tab;
@@ -150,7 +149,6 @@ function updateColors(tab) {
   }
 }
 
-// Оригинальная функция setActiveTab
 let originalSetActiveTab = (tab) => {
   contentDiv.innerHTML = contents[tab];
   buttons.forEach(btn => {
@@ -159,7 +157,6 @@ let originalSetActiveTab = (tab) => {
   updateColors(tab);
 };
 
-// Подсветка навыков
 function clearHighlights() {
   document.querySelectorAll('.skill-item.highlighted').forEach(el => {
     el.classList.remove('highlighted');
@@ -204,7 +201,6 @@ function attachSkillHoverHandlers() {
   });
 }
 
-// Общая функция setActiveTab с вызовами специфичных обработчиков
 function setActiveTab(tab) {
   originalSetActiveTab(tab);
 
@@ -213,7 +209,6 @@ function setActiveTab(tab) {
   }
 }
 
-// Обработчики кнопок навигации
 buttons.forEach(button => {
   button.addEventListener('click', () => {
     setActiveTab(button.getAttribute('data-content'));
@@ -232,7 +227,6 @@ rightArrow.addEventListener('click', () => {
   setActiveTab(tabs[idx]);
 });
 
-// Фоновая анимация на canvas
 const canvas = document.getElementById('bgCanvas');
 const ctx = canvas.getContext('2d');
 let width, height;
@@ -309,7 +303,6 @@ function animate() {
 
 window.addEventListener('resize', resize);
 
-// Инициализация
 init();
 animate();
 setActiveTab('resume');
