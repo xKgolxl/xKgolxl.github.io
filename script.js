@@ -51,7 +51,7 @@ const contents = {
 
       <div class="skills-column" data-column="hard-extend">
         <h3>Hard Extend</h3>
-        <div class="skill-item" data-related="PYTHON">NumPy, Pandas, Matplotlib</div>
+        <div class="skill-item" data-related="PYTHON">NumPy, Pandas, Matplotlib, Seaborn, Plotly</div>
         <div class="skill-item" data-related="DATAVISUAL">PowerBi, Tableau</div>
         <div class="skill-item" data-related="SQL">ANSI SQL, MySQL</div>
       </div>
