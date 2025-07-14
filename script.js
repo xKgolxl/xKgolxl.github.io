@@ -72,52 +72,55 @@ const contents = {
     </div>
   `,
 
-  certifications: `
-    <div class="certifications-container">
-      <div class="cert-card">
-        <a href="SERT/certificate1.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
-          <div class="cert-title">Certificate 1</div>
-          <div class="cert-desc">Course Learning skill</div>
-        </a>
-      </div>
-      <div class="cert-card">
-        <a href="SERT/certificate2.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
-          <div class="cert-title">Certificate 2</div>
-          <div class="cert-desc">Python Basics</div>
-        </a>
-      </div>
-      <div class="cert-card">
-        <a href="SERT/certificate4.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
-          <div class="cert-title">Certificate 3</div>
-          <div class="cert-desc">Data Marathon: Python and SQL</div>
-        </a>
-      </div>
-      <div class="cert-card">
-        <a href="SERT/certificate5.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
-          <div class="cert-title">Certificate 4</div>
-          <div class="cert-desc">SQL Introduction</div>
-        </a>
-      </div>
-      <div class="cert-card">
-        <a href="SERT/certificate6.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
-          <div class="cert-title">Certificate 5</div>
-          <div class="cert-desc">SQL Basics</div>
-        </a>
-      </div>
-      <div class="cert-card">
-        <a href="SERT/certificate7.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
-          <div class="cert-title">Certificate 6</div>
-          <div class="cert-desc">Python basics</div>
-        </a>
-      </div>
-      <div class="cert-card">
-        <a href="SERT/certificate8.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
-          <div class="cert-title">Certificate 7</div>
-          <div class="cert-desc">Python Adv.Basics</div>
-        </a>
-      </div>
+ certifications: `
+  <div class="certifications-container">
+    <div class="certifications-header">
+      There are many more certificates, but it’s hard to add them all here.
     </div>
-  `,
+    <div class="cert-card">
+      <a href="SERT/certificate1.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+        <div class="cert-title">Certificate 1</div>
+        <div class="cert-desc">Course Learning skill</div>
+      </a>
+    </div>
+    <div class="cert-card">
+      <a href="SERT/certificate2.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+        <div class="cert-title">Certificate 2</div>
+        <div class="cert-desc">Python Basics</div>
+      </a>
+    </div>
+    <div class="cert-card">
+      <a href="SERT/certificate4.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+        <div class="cert-title">Certificate 3</div>
+        <div class="cert-desc">Data Marathon: Python and SQL</div>
+      </a>
+    </div>
+    <div class="cert-card">
+      <a href="SERT/certificate5.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+        <div class="cert-title">Certificate 4</div>
+        <div class="cert-desc">SQL Introduction</div>
+      </a>
+    </div>
+    <div class="cert-card">
+      <a href="SERT/certificate6.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+        <div class="cert-title">Certificate 5</div>
+        <div class="cert-desc">SQL Basics</div>
+      </a>
+    </div>
+    <div class="cert-card">
+      <a href="SERT/certificate7.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+        <div class="cert-title">Certificate 6</div>
+        <div class="cert-desc">Python basics</div>
+      </a>
+    </div>
+    <div class="cert-card">
+      <a href="SERT/certificate8.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+        <div class="cert-title">Certificate 7</div>
+        <div class="cert-desc">Python Adv.Basics</div>
+      </a>
+    </div>
+  </div>
+`,
   
 contact: `
   <div class="contact-container">
