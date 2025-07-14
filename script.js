@@ -21,19 +21,20 @@ const contents = {
           <div class="line line4"></div>
         </div>
       </div>
-<div class="right-column" id="resume-text">
-  <p>I am a beginner Data Analyst, full of enthusiasm and eager to develop in the fields of Data Analysis, Big Data, and Machine Learning. Despite lacking professional experience, I possess strong analytical thinking and a genuine passion for data and information. I quickly learn new tools and technologies, constantly improving my skills through self-study, online courses, and practical projects.</p>
+      <div class="right-column" id="resume-text">
+        <p>I am a beginner Data Analyst, full of enthusiasm and eager to develop in the fields of Data Analysis, Big Data, and Machine Learning. Despite lacking professional experience, I possess strong analytical thinking and a genuine passion for data and information. I quickly learn new tools and technologies, constantly improving my skills through self-study, online courses, and practical projects.</p>
 
-  <p>My main goal is to become part of a team of professionals where I can not only apply my knowledge but also learn from experienced colleagues by solving business-scale problems. I am open to new challenges and ready to contribute to the development of projects that bring real value to the company.</p>
+        <p>My main goal is to become part of a team of professionals where I can not only apply my knowledge but also learn from experienced colleagues by solving business-scale problems. I am open to new challenges and ready to contribute to the development of projects that bring real value to the company.</p>
 
-  <p>My key skills include:</p>
+        <p>My key skills include:</p>
 
-  <ul>
-    <li>Confident English at the B2–C1 level — necessary for reading technical documentation, communicating with colleagues, and learning new tools.</li>
-    <li>The ability to maintain focus and productivity when working with large volumes of data and tight deadlines.</li>
-    <li>The ability to quickly master new technologies, tools, and data analysis methods, which is especially important in the fast-paced field of analytics.</li>
-  </ul>
-</div>
+        <ul>
+          <li>Confident English at the B2–C1 level — necessary for reading technical documentation, communicating with colleagues, and learning new tools.</li>
+          <li>The ability to maintain focus and productivity when working with large volumes of data and tight deadlines.</li>
+          <li>The ability to quickly master new technologies, tools, and data analysis methods, which is especially important in the fast-paced field of analytics.</li>
+        </ul>
+      </div>
+    </div>
   `,
   projects: "<p>Here are some cool projects I've worked on.</p>",
 
@@ -91,7 +92,6 @@ const contents = {
           <div class="cert-desc">Data Marathon: Python and SQL</div>
         </a>
       </div>
-        <div class="certifications-container">
       <div class="cert-card">
         <a href="SERT/certificate5.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
           <div class="cert-title">Certificate 4</div>
@@ -116,14 +116,13 @@ const contents = {
           <div class="cert-desc">Python Adv.Basics</div>
         </a>
       </div>
-      <!-- Добавьте больше сертификатов по аналогии -->
     </div>
   `,
 
   contact: "<p>Contact me at email@example.com</p>"
 };
 
-let currentTab = 'resume'; 
+let currentTab = 'resume';
 
 function getRandomDarkColor() {
   const hue = Math.floor(Math.random() * 360);
