@@ -127,6 +127,7 @@ contact: `
     <button id="telegram-contact-button">Telegram Channel</button>
   </div>
 `
+  
 };
 
 let currentTab = 'resume';
